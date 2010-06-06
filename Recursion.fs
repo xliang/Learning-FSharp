@@ -2,8 +2,6 @@
 
 module Sample.Recursion
 
-// A test of git hub
-// Another test
 // Process a List with recursion 
 
 // Splitting a list into its head and tail, applying the function f 
