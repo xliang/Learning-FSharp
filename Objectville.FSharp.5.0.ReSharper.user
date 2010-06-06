@@ -1,0 +1,70 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Sequence.fs" caret="0" fromTop="0" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:PrettyString.fs" caret="0" fromTop="0" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Asynchronous.Workflow.fs" caret="351" fromTop="0" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:ReflectionSample.fs" caret="104" fromTop="0" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:OOProgramming.fs" caret="187" fromTop="0" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Imperative.fs" caret="38" fromTop="3" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:UnitsOfMeasure.fs" caret="0" fromTop="0" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Recursion.fs" caret="1422" fromTop="7" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:List.Recursion.fs" caret="1587" fromTop="10" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:FileProcess.fsx" caret="476" fromTop="6" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:PatternMatching.fsx" caret="2968" fromTop="4" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Function.fsx" caret="2524" fromTop="108" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Type.fs" caret="205" fromTop="15" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DataType.fsx" caret="697" fromTop="0" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DiscriminatedUnion.fsx" caret="330" fromTop="15" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DataType.fsx" caret="1586" fromTop="2" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Function.fsx" caret="3313" fromTop="10" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:PatternMatching.fsx" caret="675" fromTop="11" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:FileProcess.fsx" caret="0" fromTop="5" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DataType.fsx" caret="2330" fromTop="8" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:FileProcess.fsx" caret="667" fromTop="15" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:FileProcess.fsx" caret="92" fromTop="4" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:FileProcess.fsx" caret="401" fromTop="13" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:FileProcess.fsx" caret="688" fromTop="15" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DataType.fsx" caret="697" fromTop="12" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Type.fs" caret="205" fromTop="1" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DataType.fsx" caret="421" fromTop="5" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DataType.fsx" caret="697" fromTop="3" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DataType.fsx" caret="699" fromTop="9" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DataType.fsx" caret="70" fromTop="5" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DataType.fsx" caret="697" fromTop="5" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DataType.fsx" caret="697" fromTop="12" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:PatternMatching.fsx" caret="2661" fromTop="10" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:PatternMatching.fsx" caret="3348" fromTop="27" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:PatternMatching.fsx" caret="75" fromTop="4" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:PatternMatching.fsx" caret="2951" fromTop="19" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Function.fsx" caret="2313" fromTop="27" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Function.fsx" caret="2357" fromTop="27" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DiscriminatedUnion.fsx" caret="3146" fromTop="27" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Function.fsx" caret="2357" fromTop="0" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:Type.fs" caret="205" fromTop="15" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DataType.fsx" caret="697" fromTop="0" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DiscriminatedUnion.fsx" caret="2241" fromTop="27" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DiscriminatedUnion.fsx" caret="78" fromTop="3" />
+      <File id="1010A894-05F6-4DB3-8BF6-993C1E4E5144/f:DiscriminatedUnion.fsx" caret="330" fromTop="15" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.5.2\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Objectville.FSharp", "Objectville.FSharp.fsproj", "{1010A894-05F6-4DB3-8BF6-993C1E4E5144}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataFiles", "DataFiles", "{35B691DA-01E5-42E3-8386-5C8382328F08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1010A894-05F6-4DB3-8BF6-993C1E4E5144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1010A894-05F6-4DB3-8BF6-993C1E4E5144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1010A894-05F6-4DB3-8BF6-993C1E4E5144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1010A894-05F6-4DB3-8BF6-993C1E4E5144}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SpecExplorer.ActivityCompletionStatus) = preSolution
+		SpecExplorer.ActivityCompletionStatus = 
+	EndGlobalSection
+EndGlobal
