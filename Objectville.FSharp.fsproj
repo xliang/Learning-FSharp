@@ -35,7 +35,6 @@
     <Compile Include="Sequence.fs" />
     <Compile Include="PrettyString.fs" />
     <Compile Include="UnitsOfMeasure.fs" />
-    <Compile Include="Type.fs" />
     <Compile Include="Asynchronous.Workflow.fs" />
     <Compile Include="ReflectionSample.fs" />
     <Compile Include="OOProgramming.fs" />

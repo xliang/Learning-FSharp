@@ -11,10 +11,37 @@ open System
 
 let n = 123
 
+// Enum
+type Color =
+    | Red = 0 | Green = 1 | Blue = 2
+
+let myColor = Color.Blue
+
+
 // mutable
 
 let mutable x = 345
 x <- 456
+
+// Reference Call
+
+let daughter = ref "Helen"
+
+daughter := "Helena"
+
+// Access a reference cell with operator (!)
+printfn "daughter name is %s" !daughter
+
+
+// Generic Types
+
+type 'a Stack =
+    | EmptyStack
+    | StackNode of 'a * 'a Stack
+    
+let iStack = StackNode(3, StackNode(5, EmptyStack))
+let fStack = StackNode(2.0, StackNode(1.0, EmptyStack))
+let sStack = StackNode("world", StackNode("hello", EmptyStack))             
 
 // Tuple
 let tuple1 = (1, 2, 3)        
@@ -35,9 +62,6 @@ printfn "%f" zero.y
 
 let x_axis = {zero with x = 1.0}
 printf "%f" x_axis.x
-
-
-          
 
 
 /// Array

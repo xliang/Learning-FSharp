@@ -43,7 +43,7 @@ let rec factorialFunction (n) =
     if (n <= 1) then
         1
     else
-        n * factorialFunction(n -1) 
+        n * factorialFunction(n-1) 
 
 // Tail Recursion 
 // uses a special case of recursion in which the last instruction executed

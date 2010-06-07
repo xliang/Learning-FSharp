@@ -24,6 +24,7 @@ let g (x) = x + 1
 // int -> (int -> int)
 // the arrow "->" is right associative
 // which means that this type can be interpreted as "int -> (string -> unit)"
+
 // ** function take an integer arugment return a function which takes a string and return unit**
 
 // all of F# function are Partial Function
