@@ -37,11 +37,11 @@ let g (x) = x + 1
 // let sumVal = (fun x -> (fun y -> x + y))
 
 
-// declare a function
+// declare a function (lambda version)
 let addTen = fun x -> x + 10
-
 // shorter version
 let addTen1 x = x + 10
+
 
 // lambda function
 

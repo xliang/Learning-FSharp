@@ -45,11 +45,10 @@ let sStack = StackNode("world", StackNode("hello", EmptyStack))
 
 // Tuple
 let tuple1 = (1, 2, 3)        
-
 // Extract the data from Tuple
 let a, b, c = tuple1
-
 printfn "a is %d" a
+
 
 // Records 
 // Records are tuples with names components, know as fields

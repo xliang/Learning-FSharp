@@ -28,6 +28,7 @@ let schedule1 = Never
 let schedule2 = Once(noon)
 let schedule3 = Repeatedly(noon, daySpan)
 
+// pattern matching 
 let getNextOccurrence(schedule) = 
     match schedule with
         | Never -> DateTime.MaxValue
