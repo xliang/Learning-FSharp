@@ -11,7 +11,7 @@
 // the inner loop and recursing to test if tuples are faster than 
 // partial function applications
 
-module Recursion.List.Sample
+module Objectville.FSharp.Sample.Recursion.List
 
 
 open System

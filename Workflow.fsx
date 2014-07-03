@@ -1,6 +1,7 @@
-﻿#light
+﻿
+#light
 
-module Sample.AsynchrounousWorkflow
+module Objectville.FSharp.Sample.AsynchrounousWorkflow
 
 // Asynchronous (Async) Workflows
 

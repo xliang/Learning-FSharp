@@ -1,7 +1,7 @@
 ﻿
 #light
 
-module Objectville.FSharp.Sample.DataType
+module Objectville.FSharp.Sample.BasicDataType
 
 open System
 
@@ -16,7 +16,6 @@ type Color =
     | Red = 0 | Green = 1 | Blue = 2
 
 let myColor = Color.Blue
-
 
 // mutable
 

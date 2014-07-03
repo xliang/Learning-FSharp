@@ -11,6 +11,7 @@
     <AssemblyName>Objectville.FSharp</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <Name>Objectville.FSharp</Name>
+    <ProjectTypeGuids>{f2a71f9b-5d33-465a-a702-920d77279786}</ProjectTypeGuids>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,20 +33,21 @@
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition="Exists('$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <ItemGroup>
-    <Compile Include="Sequence.fs" />
     <Compile Include="PrettyString.fs" />
     <Compile Include="UnitsOfMeasure.fs" />
     <Compile Include="Asynchronous.Workflow.fs" />
     <Compile Include="ReflectionSample.fs" />
-    <Compile Include="OOProgramming.fs" />
-    <Compile Include="Recursion.fs" />
-    <Compile Include="Imperative.fs" />
-    <Compile Include="List.Recursion.fs" />
-    <None Include="PatternMatching.fsx" />
     <None Include="Function.fsx" />
-    <None Include="DataType.fsx" />
+    <None Include="PatternMatching.fsx" />
+    <None Include="Collection.fsx" />
+    <None Include="Sort.fsx" />
+    <None Include="Recursion.fsx" />
+    <None Include="Memorization.fsx" />
     <None Include="FileProcess.fsx" />
-    <None Include="DiscriminatedUnion.fsx" />
+    <None Include="String.fsx" />
+    <None Include="CheckDuplicatedFile.fsx" />
+    <None Include="BasicType.fsx" />
+    <None Include="ImperativeAndObjectOriented.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />

@@ -1,4 +1,0 @@
-﻿#light
-
-module Sample.Imperative
-

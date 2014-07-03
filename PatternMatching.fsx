@@ -1,8 +1,15 @@
 ﻿#light
 
 module Objectville.FSharp.Sample.PatternMatching
+(*
+    Sample includes Pattern matching and active pattern
+*)
 
 open System
+
+
+
+//----------------------------Pattern Match-------------------------------//
 
 // Patterns are rules for transforming data. we use patterns throughout F#
 // to the following types of things:
@@ -17,7 +24,7 @@ open System
 match  3 with
    | _ -> printfn "wildcard matches anything."
       
-// Another shortcut syntax
+// pattern matching shortcut syntax
 
 //let something = function
 //    | test1 -> value1
@@ -46,6 +53,9 @@ let rec sum theList =
 
 // Using pattern matching in conjunction with recursive list processing 
 // is a common idiom in F# programming
+// It is an alternative functional representation of match
+// it does not use match. Instead, this form of pattern matching uses the 
+// keyword function to include a lambda expression ("pattern matching function") 
 
 let rec pairs = function 
     | h1 :: (h2 ::_ as t) -> (h1, h2) :: pairs t
@@ -114,14 +124,26 @@ let testInput() =
 // Test the function interactively
 testInput()
 
-// Active Pattern
+//------------------------------------Active Pattern--------------------------//
 
+// Active pattern allow you to view arbitrary values through a different len
+// much the same way as you gave a different underlying representation to expression
+
+// use active pattern to 
+// 1. remove "when" guard in pattern match
+// 2. make pattern match more expressive  
+
+// Single case Active Pattern
+
+// Convert one type to another
 let (|F2C|) f =
     (f - 32.0) * (5.0 / 9.0)    
 
 // f is used as the input to the active pattern
 // and c is the output
 
+// F2C is called in the pattern matching function
+// Convert from f to c
 let test (f: float) =
      match f with
      | F2C c when c > 30.0 -> printfn "it's hot %f" c
@@ -129,7 +151,11 @@ let test (f: float) =
      | F2C c when c > 10.0 -> printfn "it's cool %f" c
      | _ -> printfn "it's getting cold!"
 
-// multi-case active pattern
+
+// Multi-case active pattern
+// Covert the input data into one of the several values
+// Just like to convert input data into discriminated union
+
 let (|Child|Teen|Adult|Senior|) age =
     if age < 13 then Child
     elif age >= 13 && age < 18 then Teen
@@ -150,8 +176,63 @@ let rec showPeople p =
         | Senior -> printfn "senior";  
         showPeople tail
 
-// Partial Active Pattern
+// This active pattern divides all strings into their various meanings.
+// The types can contains values !!
 
+let (|Paragraph|Sentence|Word|WhiteSpace|) (input : string) =
+        let input = input.Trim()
+        
+        if input = "" then
+            WhiteSpace
+        elif input.IndexOf(".") <> -1 then
+            // Paragraph contains a tuple of sentence counts and sentences.
+            let sentences = input.Split([|"."|], StringSplitOptions.None)
+            Paragraph (sentences.Length, sentences)
+        elif input.IndexOf(" ") <> -1 then
+            // !! Sentence contains an array of string words
+            Sentence (input.Split([|" "|], StringSplitOptions.None))
+        else
+            // Word contains a string
+            Word (input)
+ 
+// Count the number of letters of a string by breaking it down
+
+let rec countLetters str =
+    match str with
+    | WhiteSpace -> 0
+    | Word x     -> x.Length
+    | Sentence words
+        -> words 
+           |> Array.map countLetters 
+           |> Array.sum
+    | Paragraph (_, sentences)
+        -> sentences
+           |> Array.map countLetters  
+           |> Array.sum
+
+
+
+// Partial Case Active Pattern
+
+// It is a special case of Active Pattern, it does not always convert to a type
+// It returns option type, either Some or None.
+
+let (|ToInt|_) x = 
+    let success, result = Int32.TryParse(x)
+    if (success) then Some(result)
+    else    None
+
+let (|ToFloat|_) x = 
+    let success, result = Double.TryParse(x)
+    if (success) then Some(result)
+    else    None
+
+let convertValue x = 
+    match x with 
+    | ToInt b -> printfn "%s is a integer" b
+    | ToFloat b -> printfn "%s is a float" b
+    | _ -> printfn "cannot convert to int or float"
+       
 
 // Parameterized Active Pattern
 
@@ -168,3 +249,24 @@ let stringContains str target =
     match str with
     | StringMatches target result -> printfn "%s contains %s" str target
     | _ -> printfn "Substring not found"    
+
+// Active Pattern is a function
+
+let (|PrimeEnding99|_|) (num: int) = // pattern recognizer
+    { 2 .. num |> float |> Math.Sqrt |> int } // Sequence Expression??
+    | Seq.tryFind (fun i -> num % i = 0)
+    |> function 
+        | None -> 
+            if (num + 1) % 100 = 0 then
+                num |> Some
+            else
+                None
+        | _ -> 
+            None
+
+let _ = 
+    match 199 with 
+        | PrimeEnding199 _ ->
+              printf "199 is a prime ending with 99\n"
+        | _ -> 
+              printf "199 is a not a prime\n"
